@@ -7,6 +7,35 @@
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
 
+/* Hide sceondary nav from mobile*/
+
+@media only screen and (max-width: 767px) {
+    .secondary-navbar {
+        display: none;
+    }
+}
+
+/* Make role icons work for mobile*/
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (min-device-width: 500px) {
+    .scrollBarHack {
+      margin-right: 15px;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+}
+
 /*
  * Style tweaks
  * --------------------------------------------------
@@ -24,21 +53,51 @@ footer {
   padding: 30px 0;
 }
 
-#backgroundHolder{
-  position: fixed;
-  z-index:  -100;
+.indexBKGD{
+  /*border: 1px solid white;*/
+	background:url(../images/bkgd/bkgd_v2_index.gif);
+	background-repeat: no-repeat;
+	background-color: black;
 	}
 
-.engineeringBKGD{
+.mainBKGD{
   border: 1px solid white;
-	background:url(../images/bkgd/bkgd_v2_engineer.jpg);
+	background:url(../images/bkgd/bkgd_v2_index.gif);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+.artistBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_artist.jpg);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+.socialBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_social.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	}
 
 .programmingBKGD{
   border: 1px solid white;
-	background:url(../images/bkgd/bkgd_v2_programmer.jpg);
+  background:url(../images/bkgd/bkgd_v2_programmer.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  }
+
+.scienceBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_science.jpg);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+.engineeringBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_engineer.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	}
@@ -65,19 +124,76 @@ p{
 	color: white;
 	}
 
-#roleBar{
+#roleBarMobile{
 	padding-top: 56px;
 	bottom: 48px;
+	}
+
+#roleBarDesktop{
+	padding-top: 56px;
+	bottom: 48px;
+	}
+
+.canvasHolderBkgd{
+	background-color: #D3D3D3;
+  overflow-x: auto;
+
+	}
+
+.roleIcon-hex{
+	width: 87px;
+	margin: 20px;
 	}
 
 .roleIcon{
 	width: 87px;
 	margin: 20px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+	}
+
+.roleIcon-border{
+  border: 1px solid white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+	}
+
+.roleIcon-sm{
+	width: 58px;
+	margin: 1px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+	}
+
+.roleIcon-lg{
+	height: 192px;
+	margin: 1px;
 	}
 
 .roleIcon:hover{
 	opacity: .3;
-	}
+}
+
+.roleIcon-sm:hover{
+	opacity: .3;
+}
+
+.roleIcon-lg:hover{
+	opacity: .3;
+}
+
+.roleIcon-border:hover{
+	opacity: .3;
+}
+
+.roleIcon-hex:hover{
+	opacity: .3;
+}
 
 .hextopshift{
 	margin-bottom: -78px;
@@ -120,3 +236,98 @@ p{
 	position: relative;
 	margin-top: 467px;
 	}
+
+/*
+ * Linguist Styles
+ * --------------------------------------------------
+ */
+
+.legend {
+  fill: white;
+}
+.radar-chart .area {
+  fill-opacity: 0.7;
+}
+.radar-chart.focus .area {
+  fill-opacity: 0.3;
+}
+.radar-chart.focus .area.focused {
+  fill-opacity: 0.9;
+}
+.area.English, .English .circle {
+  fill: darkBlue;
+  stroke: none;
+}
+.area.German, .German .circle {
+  fill: dimGray;
+  stroke: none;
+}
+.area.Spanish, .Spanish .circle {
+  fill: darkRed;
+  stroke: none;
+}
+.area.Italian, .Italian .circle {
+  fill: green;
+  stroke: none;
+}
+.area.French, .French .circle {
+  fill: lightBlue;
+  stroke: none;
+}
+.area.Swedish, .Swedish .circle {
+  fill: dodgerBlue;
+  stroke: none;
+}
+.area.Russian, .Russian .circle {
+  fill: goldenRod;
+  stroke: none;
+}
+.area.Portuguese, .Portuguese .circle {
+  fill: greenYellow;
+  stroke: none;
+}
+.area.Turkish, .Turkish .circle {
+  fill: red;
+  stroke: none;
+}
+.area.Irish, .Irish .circle {
+  fill: lightSalmon;
+  stroke: none;
+}
+.area.Norwegian, .Norwegian .circle {
+  fill: mediumTurquoise;
+  stroke: none;
+}
+.area.Ukrainian, .Ukrainian .circle {
+  fill: orange;
+  stroke: none;
+}
+.area.Danish, .Danish .circle {
+  fill: indianRed;
+  stroke: none;
+}
+.area.Dutch, .Dutch .circle {
+  fill: blue;
+  stroke: none;
+}
+.area.Polish, .Polish .circle {
+  fill: maroon;
+  stroke: none;
+}
+.area.Welsh, .Welsh .circle {
+  fill: limeGreen;
+  stroke: none;
+}
+.area.Esperanto, .Esperanto .circle {
+  fill: mediumAquaMarine;
+  stroke: none;
+}
+.area.Front-End, .Ffront-End .circle {
+  fill: #31252F;
+  stroke: none;
+}
+
+.area.Back-End, .Back-End .circle {
+  fill: #726E7D;
+  stroke: none;
+}
