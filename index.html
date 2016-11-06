@@ -26,7 +26,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	<link rel="stylesheet" type="text/css" href="css/d3.css"/>
 	<link rel="stylesheet" type="text/css" href="bower_components/radar-chart-d3/src/radar-chart.css"/>
-	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
 
 
 	<!-- HTML5 Shim -->
@@ -39,16 +38,35 @@
 	<div id="content">
 
 		<!-- MAIN CONTENT -->
-		<div class="mainContent ">
+		<div class="mainContent">
 
 				<!-- INJECTED CONTENT -->
 		    <div ui-view></div>
 
+
 		</div>
 
-		<div>
-Helo
+		<div class="sidebar">
+			<div class="row">
+			  <div class="col-lg-12">
+					<div class="filter">
+						<label>Filter:</label>
+			      <input type="text" class="form-control" placeholder="Search for a project" ng-model="findProject" />
+						<hr></hr>
+					</div>
+					<div ng-controller="indexController">
+						<ul class="list-group">
+              <a style="cursor: pointer;" class="list-group-item"
+                 ng-repeat="project in projects | filter : findProject"
+                 ng-click="selectProject(project)">
+                 {{project.name}}
+               </a>
+            </ul>
+					</div>
+			  </div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
 		</div>
+
 
 	</div>
 </body>
@@ -76,6 +94,9 @@ Helo
 
 	<!-- THE app.js file -->
 	<script type="text/javascript" src="js/app.js"></script>
+
+	<!-- Controllers -->
+	<script type="text/javascript" src="js/controllers/index-ctrl.js"></script>
 
 	<!--Windows Phone JS Hack-->
 	<script type="text/javascript">
