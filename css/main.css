@@ -117,7 +117,17 @@ p{
    border-left: 1px solid #CCC;
    padding: 15px;
  }
- 
+
+ .footer {
+   height: 40px;
+   width: 80%;
+   background-color: #151515;
+   border-top: 1px solid #CCC;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+ }
+
  .filter {
 
  }

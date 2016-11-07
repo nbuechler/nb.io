@@ -21,4 +21,15 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
             }
         })
 
+
+        /*
+         * Documentation pages
+         */
+        .state('ample-affect-exhibit', {
+            url: '/ample-affect-exhibit',
+            views: {
+                '': { templateUrl: '../views/ample-affect-exhibit.html' }
+            }
+        })
+
 });
