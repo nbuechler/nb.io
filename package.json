@@ -1,0 +1,25 @@
+{
+  "name": "nb.io",
+  "version": "1.0.1",
+  "description": "nathanielbuechler.io documentation website",
+  "author": "Nathaniel Buechler",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nbuechler/nb.io/issues"
+  },
+  "homepage": "https://github.com/nbuechler/nb.io#readme",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbuechler/nb.io.git"
+  },
+  "keywords": [
+    "angular",
+    "d3"
+  ],
+  "dependencies": {
+    "bower": "~1.3.8"
+  }
+}

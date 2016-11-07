@@ -7,6 +7,7 @@
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
 
+
 /*
  * Style tweaks
  * --------------------------------------------------
@@ -24,21 +25,51 @@ footer {
   padding: 30px 0;
 }
 
-#backgroundHolder{
-  position: fixed;
-  z-index:  -100;
+.indexBKGD{
+  /*border: 1px solid white;*/
+	background:url(../images/bkgd/bkgd_v2_index.gif);
+	background-repeat: no-repeat;
+	background-color: black;
 	}
 
-.engineeringBKGD{
+.mainBKGD{
   border: 1px solid white;
-	background:url(../images/bkgd/bkgd_v2_engineer.jpg);
+	background:url(../images/bkgd/bkgd_v2_index.gif);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+.artistBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_artist.jpg);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+.socialBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_social.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	}
 
 .programmingBKGD{
   border: 1px solid white;
-	background:url(../images/bkgd/bkgd_v2_programmer.jpg);
+  background:url(../images/bkgd/bkgd_v2_programmer.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  }
+
+.scienceBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_science.jpg);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+.engineeringBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_engineer.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	}
@@ -65,58 +96,38 @@ p{
 	color: white;
 	}
 
-#roleBar{
-	padding-top: 56px;
-	bottom: 48px;
-	}
 
-.roleIcon{
-	width: 87px;
-	margin: 20px;
-	}
+/*
+ * Documentation Styles
+ */
 
-.roleIcon:hover{
-	opacity: .3;
-	}
 
-.hextopshift{
-	margin-bottom: -78px;
-	text-align: center;
-	}
+ .mainContent {
+   width: 70%;
+ }
 
-.hexrightshift{
-	margin-left: 0px;
-	}
+ .sidebar {
+   width: 30%;
+   height: 100vh;
+   overflow-y: scroll;
+   position: fixed;
+   top: 0;
+   right: 0;
+   background-color: #151515;
+   border-left: 1px solid #CCC;
+   padding: 15px;
+ }
 
-.hexleftshift{
-	margin-right: 0px;
-	}
+ .footer {
+   height: 40px;
+   width: 70%;
+   background-color: #151515;
+   border-top: 1px solid #CCC;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+ }
 
-.hexshift-1{
-	position: relative;
-	margin-top: 0px;
-	}
-.hexshift-2{
-	position: relative;
-	margin-top: 77px;
-	}
-.hexshift-3{
-	position: relative;
-	margin-top: 155px;
-	}
-.hexshift-4{
-	position: relative;
-	margin-top: 233px;
-	}
-.hexshift-5{
-	position: relative;
-	margin-top: 311px;
-	}
-.hexshift-6{
-	position: relative;
-	margin-top: 389px;
-	}
-.hexshift-7{
-	position: relative;
-	margin-top: 467px;
-	}
+ .filter {
+
+ }
