@@ -54,14 +54,19 @@
 						<hr></hr>
 					</div>
 					<div ng-controller="indexController">
-						<ul class="list-group">
-              <a style="cursor: pointer;"
+						<div class="list-group">
+              <a ng-repeat="project in projects | filter : findProject"
+							   style="cursor: pointer;"
 								 class="list-group-item"
-                 ng-repeat="project in projects | filter : findProject"
-                 ng-click="selectProject(project)">
-                 {{project.name}}
+								 ui-sref="{{project.name}}">
+	                 <h6>{{project.name}}</h6>
+									 <div class="badge">{{project.language}}</div>
+									 <div>Created On: {{project.created_at | date : format : timezone}}</div>
+									 <div>Last Update: {{project.pushed_at | date : format : timezone}}</div>
+									 <hr></hr>
+									 <div>{{project.description}}</div>
                </a>
-            </ul>
+            </div>
 					</div>
 			  </div><!-- /.col-lg-6 -->
 			</div><!-- /.row -->
