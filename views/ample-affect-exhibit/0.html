@@ -1,3 +1,12 @@
+<!--
+
+TODO: Add a way to make all of this a single page (modular) that is filled with
+different data from each of the sections.
+
+TODO: Remove AJAX and use Angular HTTP Service
+
+ -->
+
 <div class="indexBKGD" style="height: 80vh; margin-bottom: -40px;">
   <div style="margin-bottom: 100px;">
     <div class="row">
@@ -31,6 +40,14 @@
 
 <div class="footer">
 
+  <ul class="nav nav-pills">
+    <li class="nav-item active"><a href="">0</a></li>
+    <li class="nav-item"><a href="">1</a></li>
+    <li class="nav-item"><a href="">2</a></li>
+    <li class="nav-item"><a href="">3</a></li>
+    <li class="nav-item"><a href="">4</a></li>
+  </ul>
+
 </div>
 
 <script>
@@ -45,5 +62,14 @@ $.ajax({
 }).done(function(result) {
   $("#preview").append(markdown.toHTML(result));
 });
+
+
+//
+//
+
+$('.nav-item').click(function () {
+  $('.nav-item').removeClass('active')
+  $(this).addClass('active')
+})
 
 </script>

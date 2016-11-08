@@ -146,6 +146,11 @@ p{
    left: 0;
  }
 
- .filter {
-
+ .nav-item:hover {
+   width: 200px;
+ }
+ .nav-item {
+   width: 40px;
+   -webkit-transition: width 2s, -webkit-transform 2s; /* Safari */
+   transition: width 2s, transform 2s;
  }
