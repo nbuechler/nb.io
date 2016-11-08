@@ -2,6 +2,8 @@
 nbioApp.controller('indexController', ['$scope', '$http',
     function($scope, $http) {
 
+      $scope.loading = 1;
+
       $scope.projects = [];
       $http.get('https://api.github.com/users/nbuechler/repos')
       .success(function(response) {
@@ -11,6 +13,7 @@ nbioApp.controller('indexController', ['$scope', '$http',
             $scope.projects.push(response[i]);
           }
         }
+        $scope.loading = 0;
       });
 
     }]);
