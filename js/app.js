@@ -24,11 +24,40 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
 
         /*
          * Documentation pages
+         * =================== *
          */
-        .state('ample-affect-exhibit', {
-            url: '/ample-affect-exhibit',
+
+        /*
+         * ample-affect-exhibit
+         */
+        .state('ample-affect-exhibit-0', {
+            url: '/ample-affect-exhibit/0',
             views: {
-                '': { templateUrl: '../views/ample-affect-exhibit.html' }
+                '': { templateUrl: '../views/ample-affect-exhibit/0.html' }
+            }
+        })
+        .state('ample-affect-exhibit-1', {
+            url: '/ample-affect-exhibit/1',
+            views: {
+                '': { templateUrl: '../views/ample-affect-exhibit/1.html' }
+            }
+        })
+        .state('ample-affect-exhibit-2', {
+            url: '/ample-affect-exhibit/2',
+            views: {
+                '': { templateUrl: '../views/ample-affect-exhibit/2.html' }
+            }
+        })
+        .state('ample-affect-exhibit-3', {
+            url: '/ample-affect-exhibit/3',
+            views: {
+                '': { templateUrl: '../views/ample-affect-exhibit/3.html' }
+            }
+        })
+        .state('ample-affect-exhibit-4', {
+            url: '/ample-affect-exhibit/4',
+            views: {
+                '': { templateUrl: '../views/ample-affect-exhibit/4.html' }
             }
         })
 
