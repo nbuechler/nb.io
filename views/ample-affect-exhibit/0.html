@@ -14,8 +14,8 @@ TODO: Remove AJAX and use Angular HTTP Service
         <div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2" style="text-align: center;">
           <div class="panel panel-default">
            <div class="panel-body">
-             <h3 style="text-align: center;"><strong>TITLE GOES HERE</strong></h3>
-             <p>DESCRIPTION GOES HERE</p>
+             <h3 style="text-align: center;"><strong id="title">TITLE GOES HERE</strong></h3>
+             <p id="description">README</p>
            </div>
           </div>
         </div>
@@ -57,6 +57,8 @@ let result;
 
 // https://api.github.com/repos/nbuechler/speedy-affect-scorer/readme
 // response.download_url
+
+$('#title').text(readmePageTitle)
 
 $.ajax({
   url: "https://raw.githubusercontent.com/nbuechler/" + readmePageTitle + "/master/README.md",
