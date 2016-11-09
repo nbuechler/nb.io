@@ -105,8 +105,12 @@ h4{
   border-radius: 5px;
 	}
 
-code{
-  color: black;
+p code{
+  font-weight: 900;
+  color: green;
+  background: black;
+  border: #222;
+  padding: 10px;
 }
 
 p{
@@ -151,6 +155,6 @@ p{
  }
  .nav-item {
    width: 40px;
-   -webkit-transition: width 2s, -webkit-transform 2s; /* Safari */
-   transition: width 2s, transform 2s;
+   -webkit-transition: width .5s; /* Safari */
+   transition: width .5s;
  }
