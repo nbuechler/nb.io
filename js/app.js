@@ -60,5 +60,14 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
                 '': { templateUrl: '../views/ample-affect-exhibit/4.html' }
             }
         })
+        /*
+         * basic-poll
+         */
+        .state('basic-poll-0', {
+            url: '/basic-poll/0',
+            views: {
+                '': { templateUrl: '../views/readme.html' }
+            }
+        })
 
 });
