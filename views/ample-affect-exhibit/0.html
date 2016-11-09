@@ -14,8 +14,8 @@ TODO: Remove AJAX and use Angular HTTP Service
         <div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2" style="text-align: center;">
           <div class="panel panel-default">
            <div class="panel-body">
-             <h3 style="text-align: center;"><strong>ample-affect-exhibit</strong></h3>
-             <p>A user interface to show data that is created from affects</p>
+             <h3 style="text-align: center;"><strong>TITLE GOES HERE</strong></h3>
+             <p>DESCRIPTION GOES HERE</p>
            </div>
           </div>
         </div>
@@ -52,13 +52,14 @@ TODO: Remove AJAX and use Angular HTTP Service
 
 <script>
 
+let readmePageTitle = window.location.hash.split('/')[1];
 let result;
 
 // https://api.github.com/repos/nbuechler/speedy-affect-scorer/readme
 // response.download_url
 
 $.ajax({
-  url: "https://raw.githubusercontent.com/nbuechler/ample-affect-exhibit/master/README.md",
+  url: "https://raw.githubusercontent.com/nbuechler/" + readmePageTitle + "/master/README.md",
 }).done(function(result) {
   $("#preview").append(markdown.toHTML(result));
 });
