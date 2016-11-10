@@ -7,9 +7,19 @@ nbioApp.controller('readmeController', ['$scope', '$state', '$http',
       // https://api.github.com/repos/nbuechler/speedy-affect-scorer/readme
       // response.download_url
 
+      $scope.loading = 1;
+
+      let readmePageTitle = $state.current.url.split('/')[1]
+      $('#title').text(readmePageTitle)
+      $http.get('https://raw.githubusercontent.com/nbuechler/' + readmePageTitle + '/master/README.md')
+      .success(function(response) {
+        $("#preview").append(markdown.toHTML(response));
+        $scope.loading = 0;
+      });
+
 
       // $.ajax({
-      //   let readmePageTitle = window.location.hash.split('/')[1];
+      //   let readmePageTitle = $state.current.url.split('/')[1];
       //   $('#title').text(readmePageTitle)
       //   url: "https://raw.githubusercontent.com/nbuechler/" + readmePageTitle + "/master/README.md",
       // }).done(function(result) {

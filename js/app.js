@@ -33,7 +33,10 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
         .state('ample-affect-exhibit-0', {
             url: '/ample-affect-exhibit/0',
             views: {
-                '': { templateUrl: '../views/ample-affect-exhibit/0.html' }
+                '': {
+                  templateUrl: '../views/readme.html',
+                  controller: "readmeController"
+                }
             }
         })
         .state('ample-affect-exhibit-1', {
