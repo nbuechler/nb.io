@@ -219,7 +219,7 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
                 }
             }
         })
-        .state('nb.com-v8-0', {
+        .state('nb-com-v8-0', {
             url: '/nb.com-v8/0',
             views: {
                 '': {
@@ -228,7 +228,7 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
                 }
             }
         })
-        .state('nb.io-0', {
+        .state('nb-io-0', {
             url: '/nb.io/0',
             views: {
                 '': {
@@ -237,7 +237,7 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
                 }
             }
         })
-        .state('nbuechler.github.io-0', {
+        .state('nbuechler-github-io-0', {
             url: '/nbuechler.github.io/0',
             views: {
                 '': {
