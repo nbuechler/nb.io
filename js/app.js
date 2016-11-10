@@ -66,7 +66,10 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
         .state('basic-poll-0', {
             url: '/basic-poll/0',
             views: {
-                '': { templateUrl: '../views/readme.html' }
+                '': {
+                  templateUrl: '../views/readme.html',
+                  controller: "readmeController"
+                }
             }
         })
 
