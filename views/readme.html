@@ -1,8 +1,3 @@
-<!--
-
-TODO: Make the nav pills more modular, and also a directive!
-
- -->
 
 <div class="indexBKGD" style="height: 80vh; margin-bottom: -40px;">
   <div style="margin-bottom: 100px;">
@@ -37,17 +32,14 @@ TODO: Make the nav pills more modular, and also a directive!
 
 <div class="footer">
 
-  <ul class="nav nav-pills">
-    <li class="nav-item active"><a href="">0</a></li>
-    <li class="nav-item"><a href="">1</a></li>
-    <li class="nav-item"><a href="">2</a></li>
-    <li class="nav-item"><a href="">3</a></li>
-    <li class="nav-item"><a href="">4</a></li>
-  </ul>
+  <div ng-controller="navController">
+    <ul class="nav nav-pills pull-right">
+      <li class="nav-item active"><a ui-sref="{{(navRoot).split('.').join('-')}}-0">0 <span class="pull-right">Readme<span></a></li>
+      <li class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-1">1</a></li>
+      <li class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-2">2</a></li>
+      <li class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-3">3</a></li>
+      <li class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-4">4</a></li>
+    </ul>
+  </div>
 
 </div>
-
-<script>
-
-
-</script>

@@ -153,9 +153,22 @@ p{
  .nav-item:hover {
    width: 200px;
  }
- 
+
  .nav-item {
    width: 40px;
    -webkit-transition: width .5s; /* Safari */
    transition: width .5s;
+ }
+
+ .nav-item a span {
+   opacity: 0;
+   -webkit-transition: opacity .5s ease-in;
+      -moz-transition: opacity .5s ease-in;
+       -ms-transition: opacity .5s ease-in;
+        -o-transition: opacity .5s ease-in;
+           transition: opacity .5s ease-in;
+ }
+ .nav-item a span.load {
+    opacity: 1;
+
  }
