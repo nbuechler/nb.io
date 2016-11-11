@@ -1,6 +1,6 @@
 // NOTE: nbApp is defined in app.js
-nbioApp.controller('advancedController', ['$scope', '$http',
-    function($scope, $http) {
+nbioApp.controller('advancedController', ['$scope', '$state', '$http',
+    function($scope, $state, $http) {
 
 
     }]);
