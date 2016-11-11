@@ -1,0 +1,29 @@
+<div class="">
+  <div class="row jumbotron indexBKGD" style="height: 80vh">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="row">
+           <div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2" style="text-align: center;">
+             <div class="panel panel-default">
+               <div class="panel-body">
+                 <h3 style="text-align: center;"><strong>Basics</strong></h3>
+                 <p></p>
+               </div>
+             </div>
+           </div>
+        </div>
+    </div><!--/span-->
+  </div><!--/row-->
+</div><!--/container-->
+
+<div class="footer">
+
+  <div ng-controller="navController">
+    <ul class="nav nav-pills pull-right">
+      <li class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-0">0 <span class="pull-right">Read Me<span></a></li>
+      <li class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-1">1 <span class="pull-right">Introduction<span></a></li>
+      <li class="nav-item active"><a ui-sref="{{(navRoot).split('.').join('-')}}-2">2 <span class="pull-right">Basics<span></a></li>
+      <li class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-3">3 <span class="pull-right">Advanced<span></a></li>
+    </ul>
+  </div>
+
+</div>

@@ -11,7 +11,6 @@ nbioApp.controller('navController', ['$scope', '$state', '$http',
         })
         .mouseleave(function() {
           $(this).find('span').removeClass('load').css('visibility', 'hidden');
-          console.log($(this));
         })
 
     }]);
