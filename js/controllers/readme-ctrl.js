@@ -18,18 +18,6 @@ nbioApp.controller('readmeController', ['$scope', '$state', '$http',
       });
 
 
-      // $.ajax({
-      //   let readmePageTitle = $state.current.url.split('/')[1];
-      //   $('#title').text(readmePageTitle)
-      //   url: "https://raw.githubusercontent.com/nbuechler/" + readmePageTitle + "/master/README.md",
-      // }).done(function(result) {
-      //   $("#preview").append(markdown.toHTML(result));
-      // });
-
-
-      //
-      //
-
       $('.nav-item').click(function () {
         $('.nav-item').removeClass('active')
         $(this).addClass('active')

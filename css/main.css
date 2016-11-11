@@ -30,6 +30,8 @@ footer {
 	background:url(../images/bkgd/bkgd_v2_index.gif);
 	background-repeat: no-repeat;
 	background-color: black;
+  height: 80vh;
+  margin-bottom: -40px;
 	}
 
 .mainBKGD{
@@ -150,11 +152,27 @@ p{
    left: 0;
  }
 
- .nav-item:hover {
+ .nav-item:hover, .nav-item.active {
    width: 200px;
  }
+
  .nav-item {
    width: 40px;
    -webkit-transition: width .5s; /* Safari */
    transition: width .5s;
+ }
+
+ .nav-item a span {
+   font-weight: 900;
+   opacity: 0;
+   -webkit-transition: opacity .5s ease-in;
+      -moz-transition: opacity .5s ease-in;
+       -ms-transition: opacity .5s ease-in;
+        -o-transition: opacity .5s ease-in;
+           transition: opacity .5s ease-in;
+ }
+ .nav-item a span.load {
+   font-weight: 900;
+    opacity: 1;
+
  }

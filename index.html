@@ -68,7 +68,7 @@
               <a ng-repeat="project in projects | filter : findProject"
 							   style="cursor: pointer;"
 								 class="list-group-item"
-								 ui-sref="{{project.name}}-0">
+								 ui-sref="{{(project.name).split('.').join('-')}}-0">
 	                 <h6>{{project.name}}</h6>
 									 <div class="badge">{{project.language}}</div>
 									 <div>Created On: {{project.created_at | date : format : timezone}}</div>
@@ -113,6 +113,10 @@
 	<!-- Controllers -->
 	<script type="text/javascript" src="js/controllers/index-ctrl.js"></script>
 	<script type="text/javascript" src="js/controllers/readme-ctrl.js"></script>
+	<script type="text/javascript" src="js/controllers/nav-ctrl.js"></script>
+	<script type="text/javascript" src="js/controllers/introduction-ctrl.js"></script>
+	<script type="text/javascript" src="js/controllers/basics-ctrl.js"></script>
+	<script type="text/javascript" src="js/controllers/advanced-ctrl.js"></script>
 
 	<!--Windows Phone JS Hack-->
 	<script type="text/javascript">
