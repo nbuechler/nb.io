@@ -10,7 +10,9 @@ nbioApp.controller('navController', ['$scope', '$state', '$http',
           $(this).find('span').addClass('load').css('visibility', 'visible');
         })
         .mouseleave(function() {
-          $(this).find('span').removeClass('load').css('visibility', 'hidden');
+          if ($(this).attr('class') != 'nav-item active') {
+            $(this).find('span').removeClass('load').css('visibility', 'hidden');
+          }
         })
 
     }]);
