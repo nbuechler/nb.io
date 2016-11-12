@@ -17,7 +17,6 @@ nbioApp.directive("paragraphContainerDirective", ['$state', '$http',
           templateUrl : 'js/templates/paragraph-container.html' + '?' + guid(),
           scope: {
             heading: "@",
-            json: "@",
           },
           link: function(scope, element, attrs) {
             let readmePageTitle = $state.current.url.split('/')[1];
@@ -25,14 +24,9 @@ nbioApp.directive("paragraphContainerDirective", ['$state', '$http',
             scope.heading = attrs.heading;
             scope.navRoot = readmePageTitle;
 
-            console.log(readmePageTitle, jsonKey);
-            //
-            // $http.get('js/json/' + readmePageTitle + ".json")
-            // .success(function(response) {
-            // });
-
-            $.getJSON( "js/json/" + readmePageTitle + ".json", function( data ) {
-              console.log(data);
+            $http.get('js/json/' + readmePageTitle + '.json')
+            .success(function(response) {
+              scope.content = response[jsonKey];
             });
 
           }
