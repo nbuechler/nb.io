@@ -1,5 +1,26 @@
+<div class="header">
+
+  <div ng-controller="navController">
+    <div class="nav-group">
+      <ol class="breadcrumb pull-left">
+        <li><a ui-sref="{{(navRoot).split('.').join('-')}}-0">{{navRoot}}</a></li>
+        <li class="active">Basics</li>
+      </ol>
+        <div class="btn-nav btn btn-sm btn-info pull-right"
+             ui-sref="{{(navRoot).split('.').join('-')}}-3">
+             Next
+        </div>
+        <div class="btn-nav btn btn-sm btn-info pull-right"
+             ui-sref="{{(navRoot).split('.').join('-')}}-1">
+             Previous
+        </div>
+    </div>
+  </div>
+
+</div>
+
 <div class="indexBKGD">
-  <div style="margin-bottom: 100px;">
+  <div class="displayZone">
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
         <div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2" style="text-align: center;">

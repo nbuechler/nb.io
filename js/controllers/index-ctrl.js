@@ -1,6 +1,6 @@
 // NOTE: nbApp is defined in app.js
-nbioApp.controller('indexController', ['$scope', '$http',
-    function($scope, $http) {
+nbioApp.controller('indexController', ['$scope', '$state', '$http',
+    function($scope, $state, $http) {
 
       $scope.loading = 1;
 
