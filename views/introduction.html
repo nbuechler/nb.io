@@ -40,8 +40,11 @@
         <div class="panel panel-default">
           <div class="panel-body">
 
-            <paragraph-container-directive heading="Hello"></paragraph-container-directive>
-            <paragraph-container-directive heading="Hello"></paragraph-container-directive>
+            <div ng-controller="introductionController">
+              <div ng-repeat="heading in headings">
+                <paragraph-container-directive heading="{{heading}}"></paragraph-container-directive>
+              </div>
+            </div>
 
           </div>
         </div>

@@ -2,10 +2,11 @@
 nbioApp.controller('introductionController', ['$scope', '$state', '$http',
     function($scope, $state, $http) {
 
-      // Make this load content into a directive, so first create directives.
-      //
-      // These are going to be very long files! Or just have a switch statement
-      //
-      // and in that switch statement make it load json from files with the text.
+      let readmePageTitle = $state.current.url.split('/')[1];
+      $scope.navRoot = readmePageTitle;
+
+      if (readmePageTitle == 'ample-affect-exhibit') {
+        $scope.headings = ['What is Affect?', 'Who is the Audience?']
+      }
 
     }]);
