@@ -18,7 +18,7 @@
   </div>
   <div class="glowBar">
   </div>
-  
+
 </div>
 
 <div class="indexBKGD">
@@ -46,6 +46,28 @@
               <div ng-repeat="heading in headings">
                 <paragraph-container-directive heading="{{heading}}"></paragraph-container-directive>
               </div>
+            </div>
+
+            <div ng-if="headings.length < 1">
+              <h1>Make sure to read the README, and browse the code.</h1>
+              <p>
+              First, try to get the code running first.<br>
+              Then, see what you can 'break' repeatedly.<br>
+              Make sure you know the programming language and paradigm.<br>
+              Finally, try adding something to the code.<br>
+              You might even surprise yourself.
+              </p>
+            </div>
+
+            <div ng-if="headings.length > 1">
+              <h1>Now, read the README.</h1>
+              <p>
+              First, try to get the code running first.<br>
+              Then, see what you can 'break' repeatedly.<br>
+              Make sure you know the programming language and paradigm.<br>
+              Finally, try adding something to the code.<br>
+              You might even surprise yourself.
+              </p>
             </div>
 
           </div>

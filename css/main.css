@@ -234,6 +234,10 @@ p{
    transition: width .5s;
  }
 
+ .nav-item a {
+   color: white;
+ }
+
  .nav-item a span {
    font-weight: 900;
    opacity: 0;
