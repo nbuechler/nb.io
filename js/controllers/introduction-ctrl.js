@@ -5,8 +5,16 @@ nbioApp.controller('introductionController', ['$scope', '$state', '$http',
       let readmePageTitle = $state.current.url.split('/')[1];
       $scope.navRoot = readmePageTitle;
 
-      if (readmePageTitle == 'ample-affect-exhibit') {
-        $scope.headings = ['What is Affect?', 'Who is the Audience?']
+      switch (readmePageTitle) {
+        case 'ample-affect-exhibit':
+          $scope.headings = [
+            'What license is this project?',
+            'What is affect?',
+            'Why is this important?',
+          ]
+          break;
+        default:
+        $scope.headings = []
       }
 
     }]);

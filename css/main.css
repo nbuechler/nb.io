@@ -107,12 +107,11 @@ h4{
   border-radius: 5px;
 	}
 
-p code{
+pre {
   font-weight: 900;
-  color: green;
-  background: black;
+  color: #CCC;
+  background: #121212;
   border: #222;
-  padding: 10px;
 }
 
 p{
@@ -125,6 +124,14 @@ p{
  * Documentation Styles
  */
 
+
+ a {
+   color: white;
+ }
+
+ a:hover {
+   color: #111;
+ }
 
  .mainContent {
    width: 70%;
@@ -155,7 +162,37 @@ p{
    position: fixed;
    top: 0;
    left: 0;
+   z-index: 100;
  }
+
+ .titlePanel {
+   background-color: rgba(34, 34, 34, .4);
+   border: 1px solid white;
+   -webkit-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
+   -moz-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
+   box-shadow: 0px 1px 8px 0px rgba(204,204,204,1);
+ }
+
+ .textPanel {
+   background-color: rgba(34, 34, 34, .95);
+   border: 1px solid white;
+   -webkit-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
+   -moz-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
+   box-shadow: 0px 1px 8px 0px rgba(204,204,204,1);
+ }
+
+ .glowBar{
+     border: 1px solid white;
+     border-radius: 1px;
+     margin-left: 10px;
+     margin-right: 10px;
+     margin-top: 48px;
+     -webkit-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
+     -moz-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
+     box-shadow: 0px 1px 8px 0px rgba(204,204,204,1);
+     height: 6px;
+     background: #222;
+  }
 
  .footer {
    height: 40px;
@@ -165,6 +202,7 @@ p{
    position: fixed;
    bottom: 0;
    left: 0;
+   z-index: 100;
  }
 
  .breadcrumb {
@@ -194,6 +232,10 @@ p{
    width: 40px;
    -webkit-transition: width .5s; /* Safari */
    transition: width .5s;
+ }
+
+ .nav-item a {
+   color: white;
  }
 
  .nav-item a span {

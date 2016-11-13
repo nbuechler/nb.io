@@ -13,14 +13,14 @@ nbioApp.controller('readmeController', ['$scope', '$state', '$http',
       $('#title').text(readmePageTitle)
       $http.get('https://raw.githubusercontent.com/nbuechler/' + readmePageTitle + '/master/README.md')
       .success(function(response) {
-        $("#preview").append(markdown.toHTML(response));
+        $("#preview").append(marked(response));
         $scope.loading = 0;
       });
-
 
       $('.nav-item').click(function () {
         $('.nav-item').removeClass('active')
         $(this).addClass('active')
       })
+
 
     }]);

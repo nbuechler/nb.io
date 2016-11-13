@@ -16,6 +16,8 @@
         </div>
     </div>
   </div>
+  <div class="glowBar">
+  </div>
 
 </div>
 
@@ -24,7 +26,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
         <div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2" style="text-align: center;">
-          <div class="panel panel-default">
+          <div class="panel panel-default titlePanel">
            <div class="panel-body">
              <h3 style="text-align: center;"><strong id="title">Basics</strong></h3>
              <p id="description">THE SIMPLE STUFF</p>
@@ -37,10 +39,38 @@
     <div class="row">
 
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-        <div class="panel panel-default">
+        <div class="panel panel-default textPanel">
           <div class="panel-body">
 
-            <div id="preview"></div>
+            <h1>'One Liner' Code Snippets</h1>
+            <p>
+            Below are pieces of code that are easy to use, and are a nice reference. <br>
+            I use these in the code and they might help to assist you.
+            </p>
+            <hr></hr>
+
+
+            <div ng-controller="introductionController">
+              <div ng-repeat="caption in oneLineCaptions">
+                <code-container-directive caption="{{caption}}"></code-container-directive>
+                <br>
+              </div>
+            </div>
+
+            <hr></hr>
+            <h1>Simple Code Snippets</h1>
+            <p>
+            Below are pieces of code that are easy to use, and are a nice reference. <br>
+            I use these in the code and they might help to assist you.
+            </p>
+
+            <hr></hr>
+            <div ng-controller="introductionController">
+              <div ng-repeat="caption in multiLineCaptions">
+                <code-container-directive caption="{{caption}}"></code-container-directive>
+                <br>
+              </div>
+            </div>
 
           </div>
         </div>
