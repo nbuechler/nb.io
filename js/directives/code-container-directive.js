@@ -14,14 +14,14 @@ nbioApp.directive("codeContainerDirective", ['$state', '$http',
 
       return {
           restrict : 'E',
-          templateUrl : 'js/templates/paragraph-container.html' + '?' + guid(),
+          templateUrl : 'js/templates/code-container.html' + '?' + guid(),
           scope: {
-            heading: "@",
+            caption: "@",
           },
           link: function(scope, element, attrs) {
             let readmePageTitle = $state.current.url.split('/')[1];
-            let jsonKey = attrs.heading.toLowerCase().replace(/ /g,'-')
-            scope.heading = attrs.heading;
+            let jsonKey = attrs.caption.toLowerCase().replace(/ /g,'-')
+            scope.caption = attrs.caption;
             scope.navRoot = readmePageTitle;
 
             $http.get('js/json/' + readmePageTitle + '.json')

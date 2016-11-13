@@ -42,7 +42,35 @@
         <div class="panel panel-default textPanel">
           <div class="panel-body">
 
-            <div id="preview"></div>
+            <h1>'One Liner' Code Snippets</h1>
+            <p>
+            Below are pieces of code that are easy to use, and are a nice reference. <br>
+            I use these in the code and they might help to assist you.
+            </p>
+            <hr></hr>
+
+
+            <div ng-controller="introductionController">
+              <div ng-repeat="caption in oneLineCaptions">
+                <code-container-directive caption="{{caption}}"></code-container-directive>
+                <br>
+              </div>
+            </div>
+
+            <hr></hr>
+            <h1>Simple Code Snippets</h1>
+            <p>
+            Below are pieces of code that are easy to use, and are a nice reference. <br>
+            I use these in the code and they might help to assist you.
+            </p>
+
+            <hr></hr>
+            <div ng-controller="introductionController">
+              <div ng-repeat="caption in multiLineCaptions">
+                <code-container-directive caption="{{caption}}"></code-container-directive>
+                <br>
+              </div>
+            </div>
 
           </div>
         </div>

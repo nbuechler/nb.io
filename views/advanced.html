@@ -42,7 +42,19 @@
         <div class="panel panel-default textPanel">
           <div class="panel-body">
 
-            <div id="preview"></div>
+            <div ng-controller="introductionController">
+              <div ng-repeat="heading in headings_01">
+                <paragraph-container-directive heading="{{heading}}"></paragraph-container-directive>
+              </div>
+            </div>
+
+            <hr>
+
+            <div ng-controller="introductionController">
+              <div ng-repeat="caption in captions_01">
+                <code-container-directive caption="{{caption}}"></code-container-directive>
+              </div>
+            </div>
 
           </div>
         </div>

@@ -125,6 +125,14 @@ p{
  */
 
 
+ a {
+   color: white;
+ }
+
+ a:hover {
+   color: #111;
+ }
+
  .mainContent {
    width: 70%;
  }
