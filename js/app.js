@@ -219,15 +219,6 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
                 }
             }
         })
-        .state('nw-nb-desktop-0', {
-            url: '/nw-nb-desktop/0',
-            views: {
-                '': {
-                  templateUrl: '../views/readme.html',
-                  controller: "readmeController"
-                }
-            }
-        })
         .state('serpentine-learner-0', {
             url: '/serpentine-learner/0',
             views: {
@@ -257,6 +248,15 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
         })
         .state('turnt-octo-robot-0', {
             url: '/turnt-octo-robot/0',
+            views: {
+                '': {
+                  templateUrl: '../views/readme.html',
+                  controller: "readmeController"
+                }
+            }
+        })
+        .state('voting-server-0', {
+            url: '/voting-server/0',
             views: {
                 '': {
                   templateUrl: '../views/readme.html',
@@ -450,15 +450,6 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
         })
         .state('nbuechler-github-io-1', {
             url: '/nbuechler.github.io/1',
-            views: {
-                '': {
-                  templateUrl: '../views/introduction.html',
-                  controller: "introductionController"
-                }
-            }
-        })
-        .state('nw-nb-desktop-1', {
-            url: '/nw-nb-desktop/1',
             views: {
                 '': {
                   templateUrl: '../views/introduction.html',
@@ -695,15 +686,6 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
                 }
             }
         })
-        .state('nw-nb-desktop-2', {
-            url: '/nw-nb-desktop/2',
-            views: {
-                '': {
-                  templateUrl: '../views/basics.html',
-                  controller: "basicsController"
-                }
-            }
-        })
         .state('serpentine-learner-2', {
             url: '/serpentine-learner/2',
             views: {
@@ -926,15 +908,6 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
         })
         .state('nbuechler-github-io-3', {
             url: '/nbuechler.github.io/3',
-            views: {
-                '': {
-                  templateUrl: '../views/advanced.html',
-                  controller: "advancedController"
-                }
-            }
-        })
-        .state('nw-nb-desktop-3', {
-            url: '/nw-nb-desktop/3',
             views: {
                 '': {
                   templateUrl: '../views/advanced.html',
