@@ -6,6 +6,35 @@ nbioApp.controller('navController', ['$scope', '$state', '$http',
       $scope.navRoot = readmePageTitle;
 
       /*
+       This section is for showing/hiding the navigation
+       */
+      switch (readmePageTitle) {
+        case 'ample-affect-exhibit':
+          $scope.navToggles = {
+            "zero": true,
+            "one": true,
+            "two": true,
+            "three": true,
+          }
+          break;
+        case 'basic-poll':
+          $scope.navToggles = {
+            "zero": true,
+            "one": true,
+            "two": false,
+            "three": false,
+          }
+          break;
+        default:
+          $scope.navToggles = {
+            "zero": false,
+            "one": false,
+            "two": false,
+            "three": false,
+          }
+      }
+
+      /*
        This section is for the page navigation
        */
       $('.nav-item')
