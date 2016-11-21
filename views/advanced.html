@@ -7,11 +7,11 @@
         <li class="active">Advanced</li>
       </ol>
         <div class="btn-nav btn btn-sm btn-info pull-right"
-             ui-sref="{{(navRoot).split('.').join('-')}}-0">
+             ui-sref="{{(navRoot).split('.').join('-')}}-{{nextPageNum}}">
              Next
         </div>
         <div class="btn-nav btn btn-sm btn-info pull-right"
-             ui-sref="{{(navRoot).split('.').join('-')}}-2">
+             ui-sref="{{(navRoot).split('.').join('-')}}-{{prevPageNum}}">
              Previous
         </div>
     </div>
@@ -68,10 +68,10 @@
 
   <div ng-controller="navController">
     <ul class="nav nav-pills pull-right">
-      <li class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-0">0 <span class="pull-right">Read Me<span></a></li>
-      <li class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-1">1 <span class="pull-right">Introduction<span></a></li>
-      <li class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-2">2 <span class="pull-right">Basics<span></a></li>
-      <li class="nav-item active"><a ui-sref="{{(navRoot).split('.').join('-')}}-3">3 <span class="pull-right load">Advanced<span></a></li>
+      <li ng-show="{{navToggles.zero}}" class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-0">0 <span class="pull-right">Read Me<span></a></li>
+      <li ng-show="{{navToggles.one}}" class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-1">1 <span class="pull-right">Introduction<span></a></li>
+      <li ng-show="{{navToggles.two}}" class="nav-item"><a ui-sref="{{(navRoot).split('.').join('-')}}-2">2 <span class="pull-right">Basics<span></a></li>
+      <li ng-show="{{navToggles.three}}" class="nav-item active"><a ui-sref="{{(navRoot).split('.').join('-')}}-3">3 <span class="pull-right load">Advanced<span></a></li>
     </ul>
   </div>
 
