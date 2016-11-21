@@ -5,12 +5,12 @@
       <ol class="breadcrumb pull-left">
         <li><a ui-sref="{{(navRoot).split('.').join('-')}}-0">{{navRoot}}</a></li>
       </ol>
-        <div class="btn-nav btn btn-sm btn-info pull-right"
-             ui-sref="{{(navRoot).split('.').join('-')}}-1">
+        <div ng-show="numPages > 1" class="btn-nav btn btn-sm btn-info pull-right"
+             ui-sref="{{(navRoot).split('.').join('-')}}-{{nextPageNum}}">
              Next
         </div>
-        <div class="btn-nav btn btn-sm btn-info pull-right"
-             ui-sref="{{(navRoot).split('.').join('-')}}-3">
+        <div ng-show="numPages > 1" class="btn-nav btn btn-sm btn-info pull-right"
+             ui-sref="{{(navRoot).split('.').join('-')}}-{{prevPageNum}}">
              Previous
         </div>
     </div>

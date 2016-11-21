@@ -7,11 +7,11 @@
         <li class="active">Basics</li>
       </ol>
         <div class="btn-nav btn btn-sm btn-info pull-right"
-             ui-sref="{{(navRoot).split('.').join('-')}}-3">
+             ui-sref="{{(navRoot).split('.').join('-')}}-{{nextPageNum}}">
              Next
         </div>
         <div class="btn-nav btn btn-sm btn-info pull-right"
-             ui-sref="{{(navRoot).split('.').join('-')}}-1">
+             ui-sref="{{(navRoot).split('.').join('-')}}-{{prevPageNum}}">
              Previous
         </div>
     </div>
