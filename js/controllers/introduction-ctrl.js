@@ -9,8 +9,14 @@ nbioApp.controller('introductionController', ['$scope', '$state', '$http',
         case 'ample-affect-exhibit':
           $scope.headings = [
             'What license is this project?',
-            'What is affect?',
             'Why is this important?',
+          ]
+          break;
+        case 'basic-poll':
+          $scope.headings = [
+            'What license is this project?',
+            'Why is this important?',
+            'Limitations',
           ]
           break;
         default:
