@@ -17,6 +17,19 @@ nbioApp.controller('basicsController', ['$scope', '$state', '$http',
             'Example of \'notImplemented\' found on dashboard',
           ]
           break;
+        case 'copious-affect-corpus':
+          $scope.oneLineCaptions = [
+            'Install Python Packages',
+            'Run the app in development mode',
+            'Export Mongo Database in Linux',
+            'Export Mongo Database in Windows',
+            'Import Mongo Database in Linux',
+            'Import Mongo Database in Windows',
+          ]
+          $scope.multiLineCaptions = [
+            'Endpoint for saving a new R-EMOTION without antonyms'
+          ]
+          break;
         default:
           $scope.oneLineCaptions = []
           $scope.multiLineCaptions = []

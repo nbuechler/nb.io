@@ -1,0 +1,18 @@
+{
+  "result": "success",
+  "what-license-is-this-project?": "The license is MIT",
+  "why-is-this-important?": "This is an attempt at building a growing corpora of affects, where an affect is a word, sound, or another sensation that indicates the presence of an emotion, specifically what I call an R-EMOTION.",
+  "what-is-an-r-emotion?" : "Representional emotions are linguistic labels (signifier/signified pairs) used to define an emotion. They are references to the actual emotion, but they are not to be confused with emotions that we experience. In this context, R-EMOTIONs are the signifiers of the signified emotions, where affects are akin to only being symptomatic observable instances of an R-EMOTION.",
+  "what-is-an-i-emotion?" : "Inferential emotions are an interpretation of how culture (as an emergent quality of human systems) constructs signifier/signified pairs of emotion where I-EMOTION s represent these as a vector of multiple R-EMOTION s.",
+  "the-problem": "There are very few credible corpora of affect available, especially those that are and work with free and open-source software (FOSS)",
+  "limitations": "Currently, there is a major limitation on the amount of time that can be used to build this corpora of affects. Linguistic information is the only kind of affective data that is available due to this time constraint.",
+  "solutions": "By using other free tools and databases, I've been able to apply my knwoledge of different technologies to create a linguistic corpora of 400 R-EMOTION s. Additionally, there is now a foundation set for other technologists, scientists, and other intellectuals to build upon and expand this corpora.",
+  "lessons-learned": "Building a corpora can be a challenge because, but it is easier to mitigate that complexity if an engineer systematizes their process. In this way, it's more likely that the process will eventually become automatic. Lastly, I've noticed that if I could encourage more people in participating, I would be able to increase my velocity as long as I don't allow the project to stray away from its inital vision.",
+  "run-the-app-in-development-mode": "python app/runserver.py 5000",
+  "install-python-packages": "pip install -r requirements.txt",
+  "export-mongo-database-in-linux": "mongodump -d affect-corpus -o ./<dir name>",
+  "export-mongo-database-in-windows": "mongodump.exe -d affect-corpus -o <path_to_dir_name>",
+  "import-mongo-database-in-linux": "mongorestore --db affect-corpus ./mongo_database_backup/affect-corpus/",
+  "import-mongo-database-in-windows": "mongorestore.exe --db affect-corpus <path_to_dir_name>",
+  "endpoint-for-saving-a-new-r-emotion-without-antonyms": "localhost:5000/corpus/y\n\n    POST:\n    {\n        \"words\":  [\n             \"joy\"\n        ],\n        \"key\": \"68757610556bca0d0e86a4eabea56411\",\n        \"collection\": \"worthlessness-corpus-only-syn-unq\",\n        \"levels\": \"3\",\n        \"include_synonyms\": \"1\",\n        \"include_antonyms\": \"0\"\n    }"
+}

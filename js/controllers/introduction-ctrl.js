@@ -19,6 +19,18 @@ nbioApp.controller('introductionController', ['$scope', '$state', '$http',
             'Limitations',
           ]
           break;
+        case 'copious-affect-corpus':
+          $scope.headings = [
+            'What license is this project?',
+            'Why is this important?',
+            'What is an R-EMOTION?',
+            'What is an I-EMOTION?',
+            'The Problem',
+            'Limitations',
+            'Solutions',
+            'Lessons Learned',
+          ]
+          break;
         default:
         $scope.headings = []
       }
