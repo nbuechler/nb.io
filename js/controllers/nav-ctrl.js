@@ -27,6 +27,14 @@ nbioApp.controller('navController', ['$scope', '$state', '$http',
             "three": false,
           }
           break;
+        case 'copious-affect-corpus':
+          $scope.navToggles = {
+            "zero": true,
+            "one": true,
+            "two": false,
+            "three": false,
+          }
+          break;
         default:
           $scope.navToggles = {
             "zero": false,
