@@ -9,5 +9,6 @@
   "start-the-mongo-database": "mongod",
   "start-the-neo4j-database": " sudo /etc/init.d/neo4j-service start",
   "install-python-packages": "pip install -r requirements.txt",
-  "run-the-app-in-development-mode": "python app/runserver.py 5000"
+  "run-the-app-in-development-mode": "python app/runserver.py 5000",
+  "load-the-linguistic-corpora-into-neo4j.-located-in-/app/load/views.py": "# This loads the corpus data from mongo to neo4j\n    @load.route('/rEmotion_corpus/all', methods=['POST'])\n    def create_all_rEmotion_corpora():\n        return controllers.create_all_rEmotion_corpora()"
 }

@@ -39,7 +39,7 @@ nbioApp.controller('navController', ['$scope', '$state', '$http',
           $scope.navToggles = {
             "zero": true,
             "one": true,
-            "two": false,
+            "two": true,
             "three": false,
           }
           break;
