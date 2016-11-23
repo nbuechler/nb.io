@@ -1,0 +1,13 @@
+{
+  "result": "success",
+  "what-license-is-this-project?": "The license is GPLv3",
+  "why-is-this-important?": "If the Logro microservices architecture becomes popular, and others use as many databases as I do, then they will need tools to manage that data. If it is only me working on the project, then I need the same tools. It is very cruical to build tools to manage other tools, and this project is an example of that concept.",
+  "the-problem": "Having multiple databases for multiple microservices requires a service in and of itself.",
+  "limitations": "Working with multiple databases means that some of the REST endpoints are unrefined. Many could be improved with more time and care, but many more endpoints could be written. The most exciting and needed enpoints have been included when needed to perform some other vital function of the Logro microservices architecture.",
+  "solutions": "The processes that exist currently allow for moving data between the neo4j and mongo databases. Moreover, the databases are both accessed by other microservices, and can now work with this service and others in tandum.",
+  "lessons-learned": "I've learned that some of these processes take much longer than I originally predicted. In fact, I think that many could be improved by someone with better database skills. I'm always wondering where the edge of my knowledge might be, and I'm excited to have found that, at least partially, in the database realm. I'd like to continue learning how to implement good ETL patterns.",
+  "start-the-mongo-database": "mongod",
+  "start-the-neo4j-database": " sudo /etc/init.d/neo4j-service start",
+  "install-python-packages": "pip install -r requirements.txt",
+  "run-the-app-in-development-mode": "python app/runserver.py 5000"
+}

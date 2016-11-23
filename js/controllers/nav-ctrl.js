@@ -35,6 +35,14 @@ nbioApp.controller('navController', ['$scope', '$state', '$http',
             "three": true,
           }
           break;
+        case 'energetic-etl':
+          $scope.navToggles = {
+            "zero": true,
+            "one": true,
+            "two": false,
+            "three": false,
+          }
+          break;
         default:
           $scope.navToggles = {
             "zero": false,
