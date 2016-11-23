@@ -15,6 +15,14 @@ nbioApp.controller('advancedController', ['$scope', '$state', '$http',
             'R-EMOTION scores are stored via Redux',
           ]
           break;
+        case 'copious-affect-corpus':
+          $scope.headings_01 = [
+            'How does a \'flat_list\'/list of words get created?',
+          ]
+          $scope.captions_01 = [
+            'Generating a \'flat_list\'',
+          ]
+          break;
         default:
           $scope.headings_01 = []
           $scope.captions_01 = []
