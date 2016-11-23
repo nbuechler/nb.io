@@ -30,6 +30,17 @@ nbioApp.controller('basicsController', ['$scope', '$state', '$http',
             'Endpoint for saving a new R-EMOTION without antonyms'
           ]
           break;
+        case 'energetic-etl':
+          $scope.oneLineCaptions = [
+            'Start the mongo database',
+            'Start the neo4j database',
+            'Install Python Packages',
+            'Run the app in development mode',
+          ]
+          $scope.multiLineCaptions = [
+            'Load the linguistic corpora into neo4j. Located in /app/load/views.py',
+          ]
+          break;
         default:
           $scope.oneLineCaptions = []
           $scope.multiLineCaptions = []

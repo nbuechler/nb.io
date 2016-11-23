@@ -31,6 +31,16 @@ nbioApp.controller('introductionController', ['$scope', '$state', '$http',
             'Lessons Learned',
           ]
           break;
+        case 'energetic-etl':
+          $scope.headings = [
+            'What license is this project?',
+            'Why is this important?',
+            'The Problem',
+            'Limitations',
+            'Solutions',
+            'Lessons Learned',
+          ]
+          break;
         default:
         $scope.headings = []
       }
