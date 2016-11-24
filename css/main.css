@@ -250,6 +250,18 @@ p{
 
  .nav-item a span.load {
    font-weight: 900;
-    opacity: 1;
+   opacity: 1;
+ }
 
+ a.list-group-item-logro {
+   background: #0F051D;
+ }
+
+ a.list-group-item-logro:hover {
+   background: #282131;
+ }
+
+ .badge-logro {
+  background: #AAA;
+  color: #0F051D;
  }

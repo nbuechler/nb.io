@@ -61,17 +61,19 @@
 					<div ng-controller="indexController">
 						<div ng-if="(projects | filter : findProject).length == 0 && loading == 0">
 					    <div style="text-align: center;" class="alert alert-info">
-							  No projects found!
+							  No projects found! {{logroMicroservices}}
 						  </div>
 					  </div>
 						<div class="list-group">
               <a ng-repeat="project in projects | filter : findProject"
 								 id="{{project.name.split('.').join('-')}}"
 							   style="cursor: pointer;"
-								 class="list-group-item"
+								 class="list-group-item {{(logroMicroservices.indexOf(project.name.split('.').join('-')) !== -1) ? 'list-group-item-logro' : ''}}"
 								 ui-sref="{{(project.name).split('.').join('-')}}-0">
 	                 <h6>{{project.name}}</h6>
 									 <div class="badge">{{project.language}}</div>
+									 <br>
+									 <div ng-show="(logroMicroservices.indexOf(project.name.split('.').join('-')) !== -1) ? 'list-group-item-logro' : ''" class="badge badge-logro">Logro Microservice</div>
 									 <div>Created On: {{project.created_at | date : format : timezone}}</div>
 									 <div>Last Update: {{project.pushed_at | date : format : timezone}}</div>
 									 <hr></hr>

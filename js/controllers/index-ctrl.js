@@ -3,6 +3,17 @@ nbioApp.controller('indexController', ['$scope', '$state', '$http',
     function($scope, $state, $http) {
 
       $scope.loading = 1;
+      $scope.logroMicroservices = [
+        'ample-affect-exhibit',
+        'copious-affect-corpus',
+        'energetic-etl',
+        'fixed-gateway',
+        'friendly-finder',
+        'hungry-interceptor',
+        'log-grower',
+        'speedy-affect-scorer',
+        'studious-display',
+      ];
 
       $scope.projects = [];
       $http.get('https://api.github.com/users/nbuechler/repos')
