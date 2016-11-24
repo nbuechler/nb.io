@@ -40,7 +40,7 @@ nbioApp.controller('navController', ['$scope', '$state', '$http',
             "zero": true,
             "one": true,
             "two": true,
-            "three": false,
+            "three": true,
           }
           break;
         default:
