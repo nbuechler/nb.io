@@ -224,6 +224,21 @@ p{
    width: 100px;
  }
 
+ .btn-info {
+   background-color: #4031AD;
+   border: #4031AD;
+ }
+
+ .btn-info:hover {
+   background-color: #2B1D94;
+   border: #2B1D94;
+ }
+
+ .btn-info:active:hover {
+   background-color: #231588;
+   border: #231588;
+ }
+
  .nav-item:hover, .nav-item.active {
    width: 200px;
  }
