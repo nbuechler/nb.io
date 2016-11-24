@@ -224,6 +224,21 @@ p{
    width: 100px;
  }
 
+ .btn-info {
+   background-color: #4031AD;
+   border: #4031AD;
+ }
+
+ .btn-info:hover {
+   background-color: #2B1D94;
+   border: #2B1D94;
+ }
+
+ .btn-info:active:hover {
+   background-color: #231588;
+   border: #231588;
+ }
+
  .nav-item:hover, .nav-item.active {
    width: 200px;
  }
@@ -250,6 +265,18 @@ p{
 
  .nav-item a span.load {
    font-weight: 900;
-    opacity: 1;
+   opacity: 1;
+ }
 
+ a.list-group-item-logro {
+   background: #0F051D;
+ }
+
+ a.list-group-item-logro:hover {
+   background: #282131;
+ }
+
+ .badge-logro {
+  background: #AAA;
+  color: #0F051D;
  }

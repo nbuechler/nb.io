@@ -23,6 +23,14 @@ nbioApp.controller('advancedController', ['$scope', '$state', '$http',
             'Generating a \'flat_list\'',
           ]
           break;
+        case 'energetic-etl':
+          $scope.headings_01 = [
+            'How does loading processed \'affect-word\' similarity data work?',
+          ]
+          $scope.captions_01 = [
+            'Running time-intensive load proccesses from neo4j to mongo. Located in /app/load/views.py',
+          ]
+          break;
         default:
           $scope.headings_01 = []
           $scope.captions_01 = []
