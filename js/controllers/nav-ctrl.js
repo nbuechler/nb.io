@@ -51,6 +51,22 @@ nbioApp.controller('navController', ['$scope', '$state', '$http',
             "three": false,
           }
           break;
+        case 'fixed-gateway':
+          $scope.navToggles = {
+            "zero": true,
+            "one": true,
+            "two": false,
+            "three": false,
+          }
+          break;
+        case 'friendly-finder':
+          $scope.navToggles = {
+            "zero": true,
+            "one": true,
+            "two": false,
+            "three": false,
+          }
+          break;
         default:
           $scope.navToggles = {
             "zero": false,
