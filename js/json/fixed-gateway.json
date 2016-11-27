@@ -1,9 +1,5 @@
 {
   "result": "success",
   "what-license-is-this-project?": "The license is GPLv3",
-  "why-is-this-important?": "",
-  "the-problem": "",
-  "limitations": "",
-  "solutions": "",
-  "lessons-learned": ""
+  "why-is-this-important?": "This is acts as the main authentication and authorization service, so it is very critical juncture of Logro. It is also a way that I can try to implement JWT tokens in the future."
 }

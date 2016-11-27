@@ -51,6 +51,12 @@ nbioApp.controller('introductionController', ['$scope', '$state', '$http',
             'Lessons Learned',
           ]
           break;
+        case 'fixed-gateway':
+          $scope.headings = [
+            'What license is this project?',
+            'Why is this important?',
+          ]
+          break;
         default:
         $scope.headings = []
       }
