@@ -57,6 +57,12 @@ nbioApp.controller('introductionController', ['$scope', '$state', '$http',
             'Why is this important?',
           ]
           break;
+        case 'friendly-finder':
+          $scope.headings = [
+            'What license is this project?',
+            'Why is this important?',
+          ]
+          break;
         default:
         $scope.headings = []
       }
