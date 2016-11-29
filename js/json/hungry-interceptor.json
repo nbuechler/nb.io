@@ -1,0 +1,14 @@
+{
+  "result": "success",
+  "what-license-is-this-project?": "The license is GPLv3",
+  "the-problem": "In this case a few of the problems are: (1) A need to format the data correctly, (2) storage processes for the data in a neo4j database, and a mongo database, (3) flexible processes for storing the data in a different -unknown- datastore entirely, (4) starting processes in an ETL process (planned Mid Oct 2016).",
+  "limitations": "I attempted to make this software without much knowledge of the python framework, Flask, which I wrote this in. Besides the typical knowledge gaps, python is not as equipped for parallel processing as other languages might be.",
+  "solutions": "Python is easier to write than other languages, so that was mainly what informed my decision. Additionally, python is a useful scripting language, and I've been able to accomplish many of the problems that I haven't listed, along with the above problems that I specified.",
+  "lessons-learned": "I've been able to improve my skills by bridging the initial knowledge gap, and as a result I've expanded into thinking more in terms of microservices and less in terms of monolithic ideas.",
+  "why-is-this-important?": "Its primary function is getting data from its counterpart in the front end side of the Logro application (currently callled 'fixed-gateway' in 2016). Its other important function is sending data to its counterpart engines listed above via its mechanisms and API. Without this piece of the Logro architecture, there wouldn't be an easy way to manage communication across all the back-end Logro services.",
+  "start-the-mongo-database": "mongod",
+  "start-the-neo4j-database": " sudo /etc/init.d/neo4j-service start",
+  "install-python-packages": "pip install -r requirements.txt",
+  "run-the-app-in-development-mode": "python app/runserver.py 5000",
+  "the-database-connections-are-set-in-/app/config/databases.py.-you-ought-to-change-these-to-suit-your-needs.": "## Connect to default instance of neo4j\n    secure_graph1 = Graph(\"http://neo4j:admin@0.0.0.0:7474/db/data/\")  "
+}

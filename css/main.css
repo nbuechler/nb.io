@@ -229,6 +229,11 @@ p{
    border: #4031AD;
  }
 
+ .alert-info {
+   background-color: #4031AD;
+   border: #4031AD;
+ }
+
  .btn-info:hover {
    background-color: #2B1D94;
    border: #2B1D94;
@@ -269,11 +274,11 @@ p{
  }
 
  a.list-group-item-logro {
-   background: #0F051D;
+   background: #282131;
  }
 
  a.list-group-item-logro:hover {
-   background: #282131;
+   background: #625671;
  }
 
  .badge-logro {

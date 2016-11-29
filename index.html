@@ -59,9 +59,9 @@
 						<hr></hr>
 					</div>
 					<div ng-controller="indexController">
-						<div ng-if="(projects | filter : findProject).length == 0 && loading == 0">
+						<div ng-show="(projects | filter : findProject).length == 0 && loading == 0">
 					    <div style="text-align: center;" class="alert alert-info">
-							  No projects found! {{logroMicroservices}}
+							  No projects found
 						  </div>
 					  </div>
 						<div class="list-group">
