@@ -1,5 +1,8 @@
 {
   "result": "success",
   "what-license-is-this-project?": "The license is GPLv3",
-  "why-is-this-important?": "This application acts as the main authentication and authorization service, so it is a very critical juncture of Logro. It is also a way that I can try to implement JWT tokens in the future."
+  "why-is-this-important?": "This application acts as the main authentication and authorization service, so it is a very critical juncture of Logro. It is also a way that I can try to implement JWT tokens in the future.",
+  "run-the-app-in-development-mode": "node ../cluster_app.js",
+  "install-npm-packages": "npm install",
+  "a-node-server-cluster-based-on-./app.js-is-created-by-the-npm-package-'cluster'.-the-file-is-./cluster_app.js": "cluster.setupMaster({\n      exec: '../app.js'\n    });"
 }

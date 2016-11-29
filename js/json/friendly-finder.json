@@ -1,5 +1,8 @@
 {
   "result": "success",
   "what-license-is-this-project?": "The license is GPLv3",
-  "why-is-this-important?": "I hope to leverage social networks to highlight connections between people. The hope is that people who use this app will have a more enriched view of how their views/beliefs/emotions/etc. relate to others"
+  "why-is-this-important?": "I hope to leverage social networks to highlight connections between people. The hope is that people who use this app will have a more enriched view of how their views/beliefs/emotions/etc. relate to others",
+  "run-the-app-in-development-mode": "npm run start dev",
+  "install-npm-packages": "npm install",
+  "changing-the-development-ip-address-in-webpack.config.js": "if(process.argv[2] == 'dev'){\n      ip = '0.0.0.0';\n    }"
 }

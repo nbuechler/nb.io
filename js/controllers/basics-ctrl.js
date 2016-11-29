@@ -9,7 +9,6 @@ nbioApp.controller('basicsController', ['$scope', '$state', '$http',
         case 'ample-affect-exhibit':
           $scope.oneLineCaptions = [
             'Install NPM Packages',
-            'Install Bower Dependencies',
             'Run the app in development mode',
           ]
           $scope.multiLineCaptions = [
@@ -39,6 +38,36 @@ nbioApp.controller('basicsController', ['$scope', '$state', '$http',
           ]
           $scope.multiLineCaptions = [
             'Load the linguistic corpora into neo4j. Located in /app/load/views.py',
+            'The database connections are set in /app/config/databases.py. You ought to change these to suit your needs.',
+          ]
+          break;
+        case 'fixed-gateway':
+          $scope.oneLineCaptions = [
+            'Install NPM Packages',
+            'Run the app in development mode',
+          ]
+          $scope.multiLineCaptions = [
+            'A node server cluster based on ./app.js is created by the npm package \'cluster\'. The file is ./cluster_app.js'
+          ]
+          break;
+        case 'friendly-finder':
+          $scope.oneLineCaptions = [
+            'Install NPM Packages',
+            'Run the app in development mode',
+          ]
+          $scope.multiLineCaptions = [
+            'Changing the development IP Address in webpack.config.js',
+          ]
+          break;
+        case 'hungry-interceptor':
+          $scope.oneLineCaptions = [
+            'Start the mongo database',
+            'Start the neo4j database',
+            'Install Python Packages',
+            'Run the app in development mode',
+          ]
+          $scope.multiLineCaptions = [
+            'The database connections are set in /app/config/databases.py. You ought to change these to suit your needs.',
           ]
           break;
         default:

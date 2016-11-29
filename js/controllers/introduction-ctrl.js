@@ -63,6 +63,16 @@ nbioApp.controller('introductionController', ['$scope', '$state', '$http',
             'Why is this important?',
           ]
           break;
+        case 'hungry-interceptor':
+          $scope.headings = [
+            'What license is this project?',
+            'Why is this important?',
+            'The Problem',
+            'Limitations',
+            'Solutions',
+            'Lessons Learned',
+          ]
+          break;
         default:
         $scope.headings = []
       }
