@@ -51,12 +51,12 @@
 					<div class="home_button">
 						<button style="width: 100%;" type="button" class="btn btn-default"
 										ui-sref="home">Home</button>
-						<hr></hr>
+						<br></br>
 					</div>
 					<div class="filter">
 						<label>Filter:</label>
 			      <input type="text" class="form-control" placeholder="Search for a project" ng-model="findProject" />
-						<hr></hr>
+						<br></br>
 					</div>
 					<div ng-controller="indexController">
 						<div ng-show="(projects | filter : findProject).length == 0 && loading == 0">
@@ -70,18 +70,19 @@
 							   style="cursor: pointer;"
 								 class="list-group-item {{(logroMicroservices.indexOf(project.name.split('.').join('-')) !== -1) ? 'list-group-item-logro' : ''}}"
 								 ui-sref="{{(project.name).split('.').join('-')}}-0">
-	                 <h6>{{project.name}}</h6>
 									 <div ng-show="{{project.language == 'JavaScript'}}" class="badge" style="background-color: #f1e05a;">{{project.language}}</div>
 									 <div ng-show="{{project.language == 'Python'}}" class="badge" style="background-color: #3572A5; color: #FFF;">{{project.language}}</div>
 									 <div ng-show="{{project.language == 'Groovy'}}" class="badge" style="background-color: #e69f56;">{{project.language}}</div>
 									 <div ng-show="{{project.language == 'HTML'}}" class="badge" style="background-color: #e44b23;">{{project.language}}</div>
 									 <div ng-show="{{project.language == 'CSS'}}" class="badge" style="background-color: #563d7c; color: #FFF;">{{project.language}}</div>
-									 <br>
 									 <div ng-show="(logroMicroservices.indexOf(project.name.split('.').join('-')) !== -1) ? 'list-group-item-logro' : ''" class="badge badge-logro">Logro Microservice</div>
-									 <div>Created On: {{project.created_at | date : format : timezone}}</div>
-									 <div>Last Update: {{project.pushed_at | date : format : timezone}}</div>
-									 <hr style="border: 1px solid white;"></hr>
-									 <div>{{project.description}}</div>
+									 <hr></hr>
+									 <div style="margin: 10px;">
+		                 <h6>{{project.name}}</h6>
+										 <div>Created On: {{project.created_at | date : format : timezone}}</div>
+										 <div>Last Update: {{project.pushed_at | date : format : timezone}}</div>
+									 </div>
+									 <div style="margin: 20px;">{{project.description}}</div>
                </a>
             </div>
 					</div>
