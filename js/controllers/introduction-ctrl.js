@@ -73,6 +73,15 @@ nbioApp.controller('introductionController', ['$scope', '$state', '$http',
             'Lessons Learned',
           ]
           break;
+        case 'log-grower':
+          $scope.headings = [
+            'What license is this project?',
+            'Why is this important?',
+            'The Problem',
+            'Limitations',
+            'Solutions',
+          ]
+          break;
         default:
         $scope.headings = []
       }

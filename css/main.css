@@ -281,6 +281,12 @@ p{
    background: #625671;
  }
 
+ .badge {
+   color: #222;
+   border: solid 1px #fff;
+   margin: 5px;
+ }
+
  .badge-logro {
   background: #AAA;
   color: #0F051D;
