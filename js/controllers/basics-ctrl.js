@@ -70,6 +70,18 @@ nbioApp.controller('basicsController', ['$scope', '$state', '$http',
             'The database connections are set in /app/config/databases.py. You ought to change these to suit your needs.',
           ]
           break;
+        case 'log-grower':
+          $scope.oneLineCaptions = [
+            'Install Bower Package Manager',
+            'Install Grunt Task Runner',
+            'Install NPM Packages',
+            'Install Bower Packages',
+            'Run the app in development mode',
+          ]
+          $scope.multiLineCaptions = [
+            'Example of a data visualization directive',
+          ]
+          break;
         default:
           $scope.oneLineCaptions = []
           $scope.multiLineCaptions = []

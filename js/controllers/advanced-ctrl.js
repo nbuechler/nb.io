@@ -31,6 +31,14 @@ nbioApp.controller('advancedController', ['$scope', '$state', '$http',
             'Running time-intensive load proccesses from neo4j to mongo. Located in /app/load/views.py',
           ]
           break;
+        case 'log-grower':
+          $scope.headings_01 = [
+            'How does integrating angular material directives for the mobile version work?',
+          ]
+          $scope.captions_01 = [
+            'Example of angular-material tab. Located in /public/modules/reflection-place/viewss/overview.client.view.html',
+          ]
+          break;
         default:
           $scope.headings_01 = []
           $scope.captions_01 = []

@@ -74,6 +74,14 @@ nbioApp.controller('navController', ['$scope', '$state', '$http',
             "three": false,
           }
           break;
+        case 'log-grower':
+          $scope.navToggles = {
+            "zero": true,
+            "one": true,
+            "two": true,
+            "three": true,
+          }
+          break;
         default:
           $scope.navToggles = {
             "zero": false,
