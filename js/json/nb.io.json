@@ -1,0 +1,13 @@
+{
+  "result": "success",
+  "what-license-is-this-project?": "The license is GPLv3",
+  "why-is-this-important?": "",
+  "the-problem": "",
+  "limitations": "",
+  "solutions": "",
+  "run-the-app": "# If you have python installed, you can use a simple server to host your pages.\n    http-server ",
+  "install-bower-package-manager": "npm install -g bower",
+  "install-npm-packages": "npm install",
+  "install-bower-packages": "bower install",
+  "": ""
+}

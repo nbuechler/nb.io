@@ -82,6 +82,30 @@ nbioApp.controller('navController', ['$scope', '$state', '$http',
             "three": true,
           }
           break;
+        case 'nathanielbuechler':
+          $scope.navToggles = {
+            "zero": true,
+            "one": true,
+            "two": true,
+            "three": false,
+          }
+          break;
+        case 'nb.com-v8':
+          $scope.navToggles = {
+            "zero": true,
+            "one": true,
+            "two": true,
+            "three": false,
+          }
+          break;
+        case 'nb.io':
+          $scope.navToggles = {
+            "zero": true,
+            "one": true,
+            "two": true,
+            "three": false,
+          }
+          break;
         default:
           $scope.navToggles = {
             "zero": false,

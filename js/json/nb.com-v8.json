@@ -1,0 +1,13 @@
+{
+  "result": "success",
+  "what-license-is-this-project?": "The license is GPLv3",
+  "why-is-this-important?": "",
+  "the-problem": "",
+  "limitations": "",
+  "solutions": "",
+  "run-the-app": "http-server # If you have python installed, you can use a simple server to host your pages.",
+  "install-bower-package-manager": "npm install -g bower",
+  "install-npm-packages": "npm install",
+  "install-bower-packages": "bower install",
+  "the-hexagon-role-grid-is-implemented-with-css": "  .hextopshift {\n       margin-bottom: -78px;\n       text-align: center;\n       }\n      .hexrightshift {\n       margin-left: 0px;\n       }\n      .hexleftshift {\n       margin-right: 0px;\n       }\n      .hexshift-1 {\n       position: relative;\n       margin-top: 0px;\n       }\n      .hexshift-2 {\n       position: relative;\n       margin-top: 77px;\n       }\n      .hexshift-3 {\n       position: relative;\n       margin-top: 155px;\n       }\n      .hexshift-4 {\n       position: relative;\n       margin-top: 233px;\n       }\n      .hexshift-5 {\n       position: relative;\n       margin-top: 311px;\n       }\n      .hexshift-6 {\n       position: relative;\n       margin-top: 389px;\n       }\n      .hexshift-7 {\n       position: relative;\n       margin-top: 467px;\n       }"
+}
