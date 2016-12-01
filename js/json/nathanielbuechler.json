@@ -1,0 +1,10 @@
+ {
+  "result": "success",
+  "what-license-is-this-project?": "The license is GPLv3",
+  "why-is-this-important?": "Displaying my 'hat' - or role - as a Multifacited Specialist, this project displays the qualities of a technician that masters many skills while being sometimes satisfactory at many more.",
+  "the-problem": "The main goal is to display all of my accomplishments. This project is meant to show both breadth and depth, and therfore shows elements of my history that are less than perfect. It is meant to show a whole picture of who I am, but it also focuses the viewer by provided different roles.",
+  "limitations": "While much different from the 1st iteration, the 7th iteration doesn't use a web framework. This deprecated project is more of an artifact of my website.",
+  "solutions": "This project is the 7th iteration of my webpage.",
+  "run-the-app": "# If you have python installed or node, you can use a simple server to host your pages.\n    http-server ",
+  "the-hexagon-role-grid-is-implemented-with-css": "  .hextopshift {\n       margin-bottom: -78px;\n       text-align: center;\n       }\n      .hexrightshift {\n       margin-left: 0px;\n       }\n      .hexleftshift {\n       margin-right: 0px;\n       }\n      .hexshift-1 {\n       position: relative;\n       margin-top: 0px;\n       }\n      .hexshift-2 {\n       position: relative;\n       margin-top: 77px;\n       }\n      .hexshift-3 {\n       position: relative;\n       margin-top: 155px;\n       }\n      .hexshift-4 {\n       position: relative;\n       margin-top: 233px;\n       }\n      .hexshift-5 {\n       position: relative;\n       margin-top: 311px;\n       }\n      .hexshift-6 {\n       position: relative;\n       margin-top: 389px;\n       }\n      .hexshift-7 {\n       position: relative;\n       margin-top: 467px;\n       }"
+}

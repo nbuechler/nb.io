@@ -82,6 +82,33 @@ nbioApp.controller('introductionController', ['$scope', '$state', '$http',
             'Solutions',
           ]
           break;
+        case 'nathanielbuechler':
+          $scope.headings = [
+            'What license is this project?',
+            'Why is this important?',
+            'The Problem',
+            'Limitations',
+            'Solutions',
+          ]
+          break;
+        case 'nb.com-v8':
+          $scope.headings = [
+            'What license is this project?',
+            'Why is this important?',
+            'The Problem',
+            'Limitations',
+            'Solutions',
+          ]
+          break;
+        case 'nb.io':
+          $scope.headings = [
+            'What license is this project?',
+            'Why is this important?',
+            'The Problem',
+            'Limitations',
+            'Solutions',
+          ]
+          break;
         default:
         $scope.headings = []
       }

@@ -16,7 +16,11 @@ nbioApp.controller('indexController', ['$scope', '$state', '$http',
       ];
 
       $scope.projects = [];
-      $http.get('https://api.github.com/users/nbuechler/repos')
+      /*
+       * Use this to get the most up-to-date repos:
+       * $http.get('https://api.github.com/users/nbuechler/repos')
+       */
+      $http.get('js/json/repos.json')
       .success(function(response) {
         // console.log(response);
         for (var i = 0; i < response.length; i++) {

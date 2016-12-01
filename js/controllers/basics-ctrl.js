@@ -82,6 +82,36 @@ nbioApp.controller('basicsController', ['$scope', '$state', '$http',
             'Example of a data visualization directive',
           ]
           break;
+        case 'nathanielbuechler':
+          $scope.oneLineCaptions = [
+            'Run the app',
+          ]
+          $scope.multiLineCaptions = [
+            'The hexagon role grid is implemented with CSS',
+          ]
+          break;
+        case 'nb.com-v8':
+          $scope.oneLineCaptions = [
+            'Install Bower Package Manager',
+            'Install NPM Packages',
+            'Install Bower Packages',
+            'Run the app',
+          ]
+          $scope.multiLineCaptions = [
+            'The hexagon role grid is implemented with CSS',
+          ]
+          break;
+        case 'nb.io':
+          $scope.oneLineCaptions = [
+            'Install Bower Package Manager',
+            'Install NPM Packages',
+            'Install Bower Packages',
+            'Run the app',
+          ]
+          $scope.multiLineCaptions = [
+            'Create this page. Located in /js/controllers/basics-ctrl.js',
+          ]
+          break;
         default:
           $scope.oneLineCaptions = []
           $scope.multiLineCaptions = []
