@@ -1,13 +1,13 @@
 {
   "result": "success",
   "what-license-is-this-project?": "The license is GPLv3",
-  "why-is-this-important?": "",
-  "the-problem": "",
-  "limitations": "",
-  "solutions": "",
-  "run-the-app": "# If you have python installed, you can use a simple server to host your pages.\n    http-server ",
+  "why-is-this-important?": "Documentation is often as important as the software it documents. This project is an attempt to share what I have done with others.",
+  "the-problem": "The main goal is to document the work I have accomplished in my personal time, and to share that work in the public space.",
+  "limitations": "I want a fully customizable site that I can edit, therefore I've created a 'mini' content mangagement system with angular.",
+  "solutions": "This project is less feature-full compared to Wordpress, but I can pull all the levers and add new code.",
+  "run-the-app": "# If you have python installed or node, you can use a simple server to host your pages.\n    http-server ",
   "install-bower-package-manager": "npm install -g bower",
   "install-npm-packages": "npm install",
   "install-bower-packages": "bower install",
-  "": ""
+  "create-this-page.-located-in-/js/controllers/basics-ctrl.js": "case 'nb.io':\n      $scope.oneLineCaptions = [\n        'Install Bower Package Manager',\n        'Install NPM Packages',\n        'Install Bower Packages',\n        'Run the app',\n      ]\n      $scope.multiLineCaptions = [\n        'Create this page. Located in /js/controllers/basics-ctrl.js',\n      ]\n      break;"
 }
