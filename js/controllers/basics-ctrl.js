@@ -112,6 +112,17 @@ nbioApp.controller('basicsController', ['$scope', '$state', '$http',
             'Create this page. Located in /js/controllers/basics-ctrl.js',
           ]
           break;
+        case 'speedy-affect-scorer':
+          $scope.oneLineCaptions = [
+            'Start the mongo database',
+            'Start the neo4j database',
+            'Install Python Packages',
+            'Run the app in development mode',
+          ]
+          $scope.multiLineCaptions = [
+            'Process for making the initial corpora with an enpoint',
+          ]
+          break;
         default:
           $scope.oneLineCaptions = []
           $scope.multiLineCaptions = []

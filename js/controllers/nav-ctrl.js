@@ -106,6 +106,14 @@ nbioApp.controller('navController', ['$scope', '$state', '$http',
             "three": false,
           }
           break;
+        case 'speedy-affect-scorer':
+          $scope.navToggles = {
+            "zero": true,
+            "one": true,
+            "two": true,
+            "three": false,
+          }
+          break;
         default:
           $scope.navToggles = {
             "zero": false,
