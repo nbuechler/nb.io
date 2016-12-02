@@ -109,6 +109,16 @@ nbioApp.controller('introductionController', ['$scope', '$state', '$http',
             'Solutions',
           ]
           break;
+        case 'speedy-affect-scorer':
+          $scope.headings = [
+            'What license is this project?',
+            'Why is this important?',
+            'The Problem',
+            'Limitations',
+            'Solutions',
+            'Lessons Learned',
+          ]
+          break;
         default:
         $scope.headings = []
       }

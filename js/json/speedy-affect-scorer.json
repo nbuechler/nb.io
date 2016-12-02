@@ -1,0 +1,13 @@
+{
+  "result": "success",
+  "what-license-is-this-project?": "The license is GPLv3",
+  "the-problem": "The idea is to score basic affects - quickly! This might sound simple, and it can be with the correct tools. Via a cultural lens based around the English language, this project aims to make use of available technologies in an effort to understand human emotion from that cultrual lens. At minimum, this software will be able to infer the emotion based on representational emotions and/or syntagram pairs.",
+  "limitations": "The project uses Flask to do the RESTful API, and while familiar with Flask, I was much more unaware of the python library NLTK. I had to do some of the NLP processing to comprehend the large quantities of natural language, and then automate that process. While the project is also structured in a way that it can be used in other projects, it is meant to be more of a library in iteslf. It can provide useful insight independent of other software, but it needs a user interface to enhance this outcome.",
+  "solutions": "(Phase 1) Score based on the emotion set referenced by Paul Eckman's big 6: anger, happiness, surprise, disgust, sadness, and fear. (Phase 2) Score based on the addition of lots of emotion sets and words which includes the 400 representational emotions mentioned above.",
+  "why-is-this-important?": "Emotions play an essential role in perception, attention, rational decision making, and action selection. I strongly believe all the social sciences can benefit from systematic methods found in other empirical disciplines, and perhaps new kinds of fields can be created akin to affective computing. My thought is one where the kinds of analytics we get from emotive data can be used to communicate how we feel to those that matter the most to us, and while there are other use cases, I hope that the technology is used to continue to connect humanity.",
+  "start-the-mongo-database": "mongod",
+  "start-the-neo4j-database": " sudo /etc/init.d/neo4j-service start",
+  "install-python-packages": "pip install -r requirements.txt",
+  "run-the-app-in-development-mode": "python app/runserver.py 5000",
+  "process-for-making-the-initial-corpora-with-an-enpoint": "-root-/corpus/y\n    \n    {\n        \"words\":  [\n            \"courageousness\"\n        ],\n        \"key\": \"YOUR_API_KEY\",\n        \"collection\": \"courageousness-corpus-only-syn-unq\",\n        \"levels\": \"3\",\n        \"include_synonyms\": \"1\",\n        \"include_antonyms\": \"0\"\n    }\n      "
+}
