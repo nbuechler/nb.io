@@ -1,6 +1,6 @@
 {
   "name": "nb.io",
-  "version": "1.5.10",
+  "version": "1.5.11",
   "description": "nathanielbuechler.io documentation website",
   "dependencies": {
     "bootstrap": "~3",
