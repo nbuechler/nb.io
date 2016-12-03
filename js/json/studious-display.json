@@ -1,0 +1,12 @@
+{
+  "result": "success",
+  "what-license-is-this-project?": "The license is GPLv3",
+  "what-is-affect?": "Affect is the measurable observation of an emotion. Affects are defined by the observed reality (via some kind of sign) of a person. Examples of affect are skin conductance, motion, speech, language and body temperature. This kind of objective data allows us to support and understand our subjective perception of our emotions. Furthermore, this kind of technology allows humans to better understand each other.",
+  "why-is-this-important?": "Emotions play an essential role in perception, attention, rational decision making, and action selection. I strongly believe all the social sciences can benefit from systematic methods found in other empirical disciplines, and perhaps new kinds of fields can be created akin to affective computing. My thought is one where the kinds of analytics we get from emotive data can be used to communicate how we feel to those that matter the most to us, and while there are other use cases, I hope that the technology is used to continue to connect humanity.",
+  "run-the-app-in-development-mode": "npm run start dev",
+  "install-npm-packages": "npm install",
+  "example-of-'notimplemented'-found-on-dashboard": "// Variable definition\n    const notImplemented = {textDecoration: \"line-through\", color: \"gray\"}\n\n    ...\n\n    // Use of variable in React\n    <li> <span style={notImplemented}>Computer Vision</span> (Not Implemented)</li>}",
+  "changing-the-development-ip-address-in-webpack.config.js": "if(process.argv[2] == 'dev'){\n      ip = '0.0.0.0';\n    }",
+  "how-does-fetching-processed-affective-data-work?": "Fetching affective datat works by using isomorphic-fetch. It calls the server, passes authentication if required, and sets the result to a Redux store.",
+  "r-emotion-scores-are-stored-via-redux": "import fetch from 'isomorphic-fetch';\n\n    ...\n\n    fetch(url, {\n      credentials: 'include',\n      method: 'POST',\n      mode: 'CORS',\n      headers: {\n        'Accept': 'application/json',\n        'Content-Type': 'application/json'\n    },\n      body: JSON.stringify(data)\n    })\n    .then(response => response.json())\n    .then(json => dispatch(receiveData('nlp', json)))\n    .catch(err => console.log(err));\n"
+}
