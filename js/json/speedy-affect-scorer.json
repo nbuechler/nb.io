@@ -1,6 +1,6 @@
 {
   "result": "success",
-  "what-license-is-this-project?": "The license is GPLv3",
+  "what-license-is-this-project?": "The license is MIT",
   "the-problem": "The idea is to score basic affects - quickly! This might sound simple, and it can be with the correct tools. Via a cultural lens based around the English language, this project aims to make use of available technologies in an effort to understand human emotion from that cultrual lens. At minimum, this software will be able to infer the emotion based on representational emotions and/or syntagram pairs.",
   "limitations": "The project uses Flask to do the RESTful API, and while familiar with Flask, I was much more unaware of the python library NLTK. I had to do some of the NLP processing to comprehend the large quantities of natural language, and then automate that process. While the project is also structured in a way that it can be used in other projects, it is meant to be more of a library in iteslf. It can provide useful insight independent of other software, but it needs a user interface to enhance this outcome.",
   "solutions": "(Phase 1) Score based on the emotion set referenced by Paul Eckman's big 6: anger, happiness, surprise, disgust, sadness, and fear. (Phase 2) Score based on the addition of lots of emotion sets and words which includes the 400 representational emotions mentioned above.",

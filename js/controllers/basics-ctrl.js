@@ -123,6 +123,15 @@ nbioApp.controller('basicsController', ['$scope', '$state', '$http',
             'Process for making the initial corpora with an enpoint',
           ]
           break;
+        case 'studious-display':
+          $scope.oneLineCaptions = [
+            'Install NPM Packages',
+            'Run the app in development mode',
+          ]
+          $scope.multiLineCaptions = [
+            'Changing the development IP Address in webpack.config.js',
+          ]
+          break;
         default:
           $scope.oneLineCaptions = []
           $scope.multiLineCaptions = []

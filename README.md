@@ -10,8 +10,5 @@ The idea is to keep track of the motivation for a project, its API's, and other 
 * Maybe one day, someone else will want to use some of my code, and I want to make it easier for them.
 * Also, I want to make it easier for myself to use as a reference in the distant future.
 
-# TODO
-* studious-display
-
 # License
 GPLv3
