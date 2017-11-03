@@ -27,9 +27,9 @@ footer {
 
 .indexBKGD{
   /*border: 1px solid white;*/
-	background:url(../images/bkgd/bkgd_v2_index.gif);
+	/*background:url(../images/bkgd/bkgd_v2_index.gif);*/
 	background-repeat: no-repeat;
-	background-color: black;
+	/*background-color: black;*/
   height: 80vh;
   margin-bottom: -40px;
 	}
@@ -166,22 +166,24 @@ p{
  }
 
  .titlePanel {
-   background-color: rgba(34, 34, 34, .4);
+   background-color: rgba(34, 34, 34, .85);
    border: 1px solid white;
-   -webkit-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
+   border-radius: 0px;
+   /*-webkit-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
    -moz-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
-   box-shadow: 0px 1px 8px 0px rgba(204,204,204,1);
+   box-shadow: 0px 1px 8px 0px rgba(204,204,204,1);*/
  }
 
  .textPanel {
    background-color: rgba(34, 34, 34, .95);
    border: 1px solid white;
-   -webkit-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
+   border-radius: 0px;
+   /*-webkit-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
    -moz-box-shadow: 0px 1px 8px 0px rgba(204,204,204,0.25);
-   box-shadow: 0px 1px 8px 0px rgba(204,204,204,1);
+   box-shadow: 0px 1px 8px 0px rgba(204,204,204,1);*/
  }
 
- .glowBar {
+ /*.glowBar {
      border: 1px solid white;
      border-radius: 1px;
      margin-left: 10px;
@@ -192,7 +194,7 @@ p{
      box-shadow: 0px 1px 8px 0px rgba(204,204,204,1);
      height: 3px;
      background: #222;
-  }
+  }*/
 
   hr {
     border-top: 1px solid rgba(256, 256, 256, .2);
@@ -313,7 +315,8 @@ p{
 
  /* Track */
  ::-webkit-scrollbar-track {
-     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     -webkit-box-shadow: inset 0 0 6px rgba(0bkg.png
+       ,0,0,0.3);
      -webkit-border-radius: 10px;
      border-radius: 10px;
  }
@@ -324,4 +327,60 @@ p{
      border-radius: 10px;
      background: #4031AD;
      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+ }
+
+
+
+ .default_img {
+   width: 200px;
+ }
+
+ .company_logo {
+   width: 150px;
+   padding: 20px;
+ }
+
+ .nice_quote {
+   margin-top: 20px;
+   font-size: 90%;
+ }
+
+ .bkg {
+   background:url(../images/bkg.png);
+   background-repeat: no-repeat;
+   background-color: #101010;
+   background-position: center;
+ }
+
+ ul {
+   list-style: none; text-align: left;
+   margin-left: 0;
+   padding-left: 3em;
+   text-indent: -3em;
+ }
+
+ li:before {
+     content: url(../images/hex.png);
+     margin: 0 1em;    /* any design */
+ }
+
+ .mainContent {
+   margin-top: 50px;
+   margin-bottom: 100px;
+ }
+
+ .footer {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   padding: 1rem;
+   padding-top: 2rem;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#131313+0,131313+100&0.8+0,0.2+100 */
+   background: -moz-linear-gradient(bottom,  rgba(9,9,9,1) 0%, rgba(29,29,29,1) 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(bottom,  rgba(9,9,9,1) 0%,rgba(29,29,29,1) 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom,  rgba(9,9,9,1) 0%,rgba(29,29,29,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc131313', endColorstr='#33131313',GradientType=0 ); /* IE6-9 */
+   border-top: 1px solid white;
+   text-align: center;
  }

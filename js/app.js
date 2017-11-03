@@ -165,6 +165,15 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
                 }
             }
         })
+        .state('kind-assistant-0', {
+            url: '/kind-assistant/0',
+            views: {
+                '': {
+                  templateUrl: '../views/readme.html',
+                  controller: "readmeController"
+                }
+            }
+        })
         .state('log-grower-0', {
             url: '/log-grower/0',
             views: {
@@ -185,6 +194,15 @@ nbioApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
         })
         .state('nathanielbuechler-0', {
             url: '/nathanielbuechler/0',
+            views: {
+                '': {
+                  templateUrl: '../views/readme.html',
+                  controller: "readmeController"
+                }
+            }
+        })
+        .state('nb-com-minimal9-0', {
+            url: '/nb.com-minimal9/0',
             views: {
                 '': {
                   templateUrl: '../views/readme.html',
